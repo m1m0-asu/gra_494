@@ -10,51 +10,61 @@ body {
 	background-color: #303841;
 	color: #d8dee9;
 }
-h1,h2,h3,p,ol,ul,li,a {
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li,
+a {
 	font-family: sans-serif;
 }
-h1,h2,h3 {
+h1,
+h2,
+h3 {
 	font-family: sans-serif;
-	color: #EDEDED;
+	color: #ededed;
 }
 h2 {
 	font-size: 1.3em;
 }
 a {
 	font-weight: bold;
-	color: #EDEDED;
-	transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	color: #ededed;
+	transition: all 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 a:hover {
 	color: #848b95;
 }
-code, pre {
+code,
+pre {
 	background-color: #22262a;
-	color: #EDEDED;
+	color: #ededed;
 	border-radius: 4px;
 	padding: 0 0.25em;
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	white-space: pre-wrap; /* Since CSS 2.1 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 img {
 	width: 100%;
 	height: auto;
 }
 section.main {
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-	transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	transition: all 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 p.copyright {
 	margin: 0 auto;
 	margin-bottom: 0.5em;
-    text-align: center;
-    color: #333333;
+	text-align: center;
+	color: #333333;
 }
 
 /* Breakpoint */
@@ -62,4 +72,280 @@ p.copyright {
 	section.main {
 		margin: 5rem 2rem;
 	}
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Atom 1 */
+.button-2021 {
+	min-width: 140px;
+	background-color: #0b0b0b;
+	border-radius: 8px;
+	line-height: 1.2;
+	font-size: 0.875rem;
+	font-weight: 600;
+	border: 1px solid #0b0b0b;
+	box-shadow: none;
+	color: #fff;
+	text-align: center;
+	padding: 16px 22px;
+	cursor: pointer;
+	transition: all 150ms linear;
+}
+
+/* Atom 3 */
+.button-2021--is-outline {
+	background-color: #fff;
+	color: #0b0b0b;
+}
+
+/* Atom 2 */
+.SliderCard__initials-container {
+	height: 82px;
+	width: 82px;
+	border-radius: 50%;
+	margin-right: 12px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.SliderCard__initials {
+	font-size: 20px;
+	font-weight: bold;
+	color: #f58523;
+}
+
+/* Atom 4 */
+.title.is-7 {
+	font-size: 0.875rem;
+}
+
+/* Atom 5 */
+.TrustPilotRating__star {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2px;
+	background-color: #e3e3e3;
+}
+
+.TrustPilotRating__star svg {
+	z-index: 1;
+}
+
+.TrustPilotRating__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00b67a;
+}
+
+/* Molecule 1 */
+.CallToActionCard {
+	padding-left: calc(8vw - 30px);
+	margin-bottom: 12px;
+	padding: 50px 30px;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.CallToActionCard-1 {
+	background-image: url('../images/molecules/cta-1.webp');
+}
+
+.title {
+	color: #0b0b0b;
+}
+
+/* Molecule 2 */
+.HuelBenefits__icon {
+	width: 36px;
+	height: 36px;
+	margin-right: 30px;
+}
+
+.HuelBenefits__block-right {
+	flex: 1;
+	margin-top: -2px;
+	max-width: 280px;
+}
+
+.HuelBenefits__sub-heading.title {
+	margin-bottom: 12px;
+	margin-top: 0px;
+	color: white;
+}
+
+.HuelBenefits__block {
+	display: flex;
+	margin-bottom: 80px;
+	background-color: black;
+	padding: 1em;
+}
+
+/* Molecule 3 */
+.HuelRange__card {
+	background-color: #fff;
+	border-radius: 12px;
+	display: block;
+	height: 100%;
+	text-align: center;
+	padding-bottom: 12px;
+	box-shadow: none;
+	outline: none;
+	transition: all 150ms linear;
+	width: 200px;
+}
+
+.HuelRange__img {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.HuelRange__text {
+	padding: 0 12px 12px;
+}
+.HuelRange__prod-title.title {
+	color: #0b0b0b;
+	margin-bottom: 5px;
+}
+.HuelRange__prod-text.title {
+	color: #f58523;
+	margin-bottom: 0;
+}
+
+/* Molecule 4 */
+.SliderCard {
+	width: 100%;
+	padding: 32px;
+	background-color: #f6f6f6;
+	border-radius: 12px;
+	overflow: hidden;
+	position: relative;
+}
+
+.SliderCard__top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.SliderCard__initials-container {
+	height: 82px;
+	width: 82px;
+	border-radius: 50%;
+	margin-right: 12px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.TrustPilotRating {
+	display: flex;
+}
+.SliderCard__review {
+	color: #545454;
+}
+
+/* Molecule 5 */
+.EmailSignup__right {
+	background-color: black;
+	padding: 16px;
+}
+.EmailSignup__email {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	height: 56px;
+	padding: 0 16px;
+	font-size: 16px;
+	border: 0;
+	box-shadow: none;
+	flex: 1;
+	outline: none;
+	margin-right: -1px;
+}
+.button.is-submit {
+	background-color: #35be5a;
+}
+
+.button {
+	background: #0b0b0b;
+	color: #fff;
+	padding: 0 20px;
+	border: 0;
+	text-decoration: none;
+	border-radius: 5px !important;
+	font-size: 14px;
+	display: inline-block;
+	height: 50px px;
+	line-height: 50px;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-ms-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+	cursor: pointer;
+	outline: none;
+	clear: both;
+}
+.EmailSignup__form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 42px;
+}
+.EmailSignup__form .button {
+	height: 56px;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	min-width: 0;
+}
+.EmailSignup__recaptcha-notice {
+	font-size: 12px;
+}
+
+/* Organism 1 */
+.CallToActionCard-2 {
+	background-image: url('../images/organisms/cta-2.webp');
+}
+.CallToActionCard-2 .title {
+	color: white;
+}
+.columns {
+	margin: 0 -0.5rem;
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+}
+.column {
+	width: 47%;
+	padding: 0 0.5rem;
+}
+.column.is-6 {
+	flex: none;
+}
+
+/* Organism 2 */
+.HuelRange {
+	background-color: white;
+	padding: 16px;
+	width: 100%;
+}
+
+/* Organism 3 */
+.EmailSignup {
+	background-color: black;
+	padding: 16px;
+}
+.EmailSignup__heading .title {
+	color: white;
 }
