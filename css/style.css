@@ -1,3 +1,5 @@
+@import url(atoms.css);
+@import url(molecules.css);
 /* Default */
 body {
 	width: 100%;

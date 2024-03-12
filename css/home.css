@@ -1,0 +1,243 @@
+@import url(atoms.css);
+@import url(molecules.css);
+
+body {
+	font-family: 'Comic Neue', cursive;
+	background-color: #e4bcc0;
+}
+
+.m-hero__heading {
+	color: #333333;
+}
+
+.m-homePageImageSection__image {
+	max-width: 100%;
+	height: auto;
+	transform: translateY(-250px);
+}
+
+.m-homePageImageSection__div {
+	max-width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.floatSection .m-floatingSection {
+	position: absolute;
+	transform: translateY(-50%);
+	margin: 0 25vw;
+}
+
+section.infoWithImage {
+	margin-top: 150px;
+}
+
+.m-infoImage__heading {
+	font-size: 40px;
+}
+
+.m-infoImage__description {
+	padding-right: 100px;
+	line-height: 3;
+}
+
+.m-infoImage__image {
+	height: auto;
+	align-self: center;
+}
+
+.m-infoVideo__heading {
+	font-size: 40px;
+	padding-left: 100px;
+}
+
+.m-infoVideo__description {
+	padding-left: 100px;
+	line-height: 3;
+}
+
+.m-infoVideo__thumbnailImage {
+	height: 500px;
+	align-self: center;
+	height: auto;
+}
+
+.m-infoVideo__playButton {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: solid 2px black;
+	border-radius: 50%;
+	padding: 15px;
+}
+
+section.itemList {
+	margin: 0 auto;
+}
+
+.m-dialog {
+	height: 75vh;
+	width: 65vw;
+	text-align: center;
+}
+
+.m-dialog__video {
+	width: 100%;
+	height: 89%;
+}
+
+@media screen and (max-width: 700px) {
+	.m-homePageImageSection__image {
+		transform: none;
+	}
+
+	.floatSection .m-floatingSection {
+		margin: 0 4vw;
+		transform: translateY(-100%);
+	}
+
+	section.infoWithImage {
+		margin-top: 10px;
+	}
+
+	.m-infoImage {
+		display: block;
+		text-align: center;
+	}
+
+	.m-infoImage__description {
+		padding-right: 0;
+	}
+
+	.m-infoVideo {
+		display: block;
+		text-align: center;
+	}
+
+	.m-infoVideo__heading,
+	.m-infoVideo__description {
+		padding-left: 0;
+	}
+
+	/* Hamburger styles */
+	#menuToggle {
+		display: block;
+		position: relative;
+		top: 50px;
+		left: 50px;
+		z-index: 1;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	#menuToggle a {
+		text-decoration: none;
+		color: #232323;
+		-webkit-transition: color 0.3s ease;
+		-o-transition: color 0.3s ease;
+		transition: color 0.3s ease;
+	}
+
+	#menuToggle a:hover {
+		color: #4f7794;
+	}
+
+	/* The hamburger button hidden inside an input element */
+	#menuToggle input {
+		display: block;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: -7px;
+		left: -5px;
+		padding: 0;
+		cursor: pointer;
+		opacity: 0; /* hide this */
+		z-index: 2; /* and place it over the hamburger */
+		-webkit-touch-callout: none;
+	}
+
+	#menuToggle label {
+		position: relative;
+		display: block;
+		width: 30px;
+		height: 30px;
+	}
+	#menuToggle label span {
+		display: none;
+	}
+
+	/*
+ * Hamburger
+ */
+	#menuToggle label div {
+		display: block;
+		width: 30px;
+		height: 2px;
+		margin-bottom: 6px;
+		position: relative;
+		background: #cdcdcd;
+		border-radius: 3px;
+		z-index: 1;
+		-webkit-transform-origin: 4px 0px;
+		-ms-transform-origin: 4px 0px;
+		transform-origin: 4px 0px;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		padding: 0;
+	}
+
+	#menuToggle label div:first-child {
+		-webkit-transform-origin: 0% 100%;
+		-ms-transform-origin: 0% 100%;
+		transform-origin: 0% 100%;
+	}
+
+	#menuToggle label div:nth-child(2) {
+		-webkit-transform-origin: 0% 0%;
+		-ms-transform-origin: 0% 0%;
+		transform-origin: 0% 0%;
+	}
+
+	/* 
+ * Change the color of the hamburger when toggled
+ */
+	#menuToggle input:checked + label div {
+		background: #232323;
+	}
+
+	/*
+ * Use absolute positioning to place the menu off-screen
+ */
+	#menu {
+		position: absolute;
+		width: 300px;
+		margin: -100px 0 0 -50px;
+		padding: 50px;
+		padding-top: 125px;
+		background: #ededed;
+		list-style-type: none;
+		/* Hide the menu off-screen to the left */
+		left: -100%;
+		-webkit-transition: left 0.3s ease;
+		-o-transition: left 0.3s ease;
+		transition: left 0.3s ease;
+	}
+
+	#menu li {
+		padding: 10px 0;
+		font-size: 22px;
+	}
+
+	/*
+ * Slide the menu in from left when the input is checked
+ */
+	#menuToggle input:checked ~ ul {
+		left: 0;
+	}
+}

@@ -1,0 +1,165 @@
+/* Navbar molecule */
+nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav img {
+	grid-column: 1 / 2;
+	height: 100px;
+	padding-left: 25px;
+}
+
+nav div {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	grid-column: 3 / -1;
+}
+
+nav div a {
+	padding: 0.5em 0;
+}
+
+/* Hero molecule */
+.m-hero {
+	background-image: url(../images/home/pastel_background.jpg);
+	background-size: cover;
+	text-align: center;
+}
+
+.m-hero h1 {
+	margin-left: 1em;
+	position: relative;
+	top: 250px;
+	max-width: 60vw;
+}
+
+.m-hero img {
+	margin-left: 40vw;
+}
+
+/* Floating section molecule */
+.m-floatingSection {
+	background-color: white;
+	text-align: center;
+	color: black;
+	padding: 1em;
+	border: solid 2px black;
+	margin: 0 25vw;
+	border-radius: 25px;
+}
+
+.m-floatingSection h2 {
+	color: black;
+}
+
+/* Info with Image section molecule */
+.m-infoImage {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 5fr;
+	margin: 0 5vw;
+}
+
+.m-infoImage h2 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.m-infoImage p {
+	grid-column: 1 / 2;
+	grid-row: 2 / -1;
+}
+
+.m-infoImage img {
+	max-width: 100%;
+	grid-column: 2 / -1;
+	grid-row: 1 / -1;
+}
+
+/* Info with Video section molecule */
+.m-infoVideo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 5fr;
+	margin: 0 5vw;
+}
+
+.m-infoVideo h2 {
+	grid-column: 2 / -1;
+	grid-row: 1 / 2;
+}
+
+.m-infoVideo p {
+	grid-column: 2 / -1;
+	grid-row: 2 / -1;
+}
+
+.m-infoVideo div {
+	width: 100%;
+	height: 100%;
+	grid-column: 1 / 2;
+	grid-row: 1 / -1;
+	display: flex;
+	position: relative;
+	cursor: pointer;
+}
+
+.m-infoVideo img {
+	max-width: 100%;
+}
+
+/* Footer molecule */
+footer {
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+}
+
+footer img {
+	grid-column: 1 / 2;
+	padding: 0 1em;
+}
+
+footer > a {
+	grid-column: 2 / 3;
+	text-align: center;
+}
+
+footer div {
+	grid-column: 3 / -1;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Item List Molecule */
+.m-itemList {
+	background-color: #e4bcc0;
+	color: black;
+	text-align: center;
+}
+
+.m-itemList h2 {
+	color: black;
+	font-size: 40px;
+}
+
+.m-itemList h3 {
+	color: black;
+	font-size: 30px;
+}
+
+.m-itemList > div {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+
+.m-itemList > div > div {
+	padding: 1em;
+	border: solid 2px black;
+	margin: 1em;
+	background-color: white;
+	border-radius: 25px;
+}

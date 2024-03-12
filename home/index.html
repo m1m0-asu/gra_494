@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+
+		<title>Midterm Project</title>
+		<link
+			rel="stylesheet"
+			href="../css/home.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Molle&family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<!-- Body -->
+	<body>
+		<section class="main">
+			<header>
+				<nav>
+					<img
+						src="../images/home/Paw Paradise Logo.png"
+						alt="Placeholder image of an X"
+						srcset=""
+					/>
+					<div>
+						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Explore</a>
+						<button>Contact</button>
+					</div>
+					<div id="menuToggle">
+						<!--
+    hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+						<input
+							name="toggle"
+							type="checkbox"
+						/>
+						<label for="toggle">
+							<span>menu</span>
+							<!--
+      divs to be styled as a hamburger button
+      -->
+							<div></div>
+							<div></div>
+							<div></div>
+						</label>
+
+						<!--
+    the menu that will slide in from the left
+    -->
+						<ul id="menu">
+							<a href="#"><li>Home</li></a>
+							<a href="#"><li>About</li></a>
+							<a href="#"><li>Explore</li></a>
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<section class="hero">
+				<div class="m-hero">
+					<h1 class="m-hero__heading">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit
+					</h1>
+					<img
+						src="../images/home/Cat in TV Bed.jpg"
+						alt="Placeholder image of an X"
+						srcset=""
+					/>
+				</div>
+			</section>
+
+			<section class="homePageImageSection">
+				<div class="m-homePageImageSection__div">
+					<img
+						class="m-homePageImageSection__image"
+						src="../images/home/Pom_on_laptop.jpg"
+						alt="Placeholder image of an X"
+						srcset=""
+					/>
+				</div>
+			</section>
+
+			<section class="floatSection">
+				<div class="m-floatingSection">
+					<h2>Lorem ipsum</h2>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						Consectetur autem quos esse accusamus atque vitae ea labore, ipsam
+						corrupti. Alias aspernatur totam repudiandae quos ea odio laudantium
+						vel delectus maxime.
+					</p>
+					<button>Lorem ipsum</button>
+				</div>
+			</section>
+
+			<section class="infoWithImage">
+				<div class="m-infoImage">
+					<h2 class="m-infoImage__heading">Lorem ipsum</h2>
+					<p class="m-infoImage__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget
+						velit aliquet sagittis id consectetur purus. Vitae congue eu
+						consequat ac felis donec et. Et magnis dis parturient montes
+						nascetur ridiculus. Id leo in vitae turpis massa. Rhoncus est
+						pellentesque elit ullamcorper dignissim cras tincidunt lobortis
+						feugiat. Arcu risus quis varius quam quisque id diam. Enim facilisis
+						gravida neque convallis a cras semper auctor. Ultrices vitae auctor
+						eu augue. Sit amet consectetur adipiscing elit pellentesque
+						habitant. Rhoncus urna neque viverra justo nec.
+					</p>
+					<img
+						class="m-infoImage__image"
+						src="../images/home/cat_with_tie.jpg"
+						alt="Placeholder image of an X"
+						srcset=""
+					/>
+				</div>
+			</section>
+
+			<section class="itemList">
+				<div class="m-itemList">
+					<h2>Lorem ipsum</h2>
+					<div>
+						<div>
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+							<button>Lorem ipsum</button>
+						</div>
+						<div>
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+							<button>Lorem ipsum</button>
+						</div>
+						<div>
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+							<button>Lorem ipsum</button>
+						</div>
+						<div>
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+							<button>Lorem ipsum</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="infoWithVideo">
+				<div class="m-infoVideo">
+					<div class="m-infoVideo__thumbnailContainer">
+						<img
+							class="m-infoVideo__thumbnailImage"
+							src="../images/home/video_thumbnail.png"
+						/>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-player-play-filled m-infoVideo__playButton"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#ffffff"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path
+								stroke="none"
+								d="M0 0h24v24H0z"
+								fill="none"
+							/>
+							<path
+								d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+								stroke-width="0"
+								fill="currentColor"
+							/>
+						</svg>
+					</div>
+					<h2 class="m-infoVideo__heading">Lorem ipsum</h2>
+					<p class="m-infoVideo__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget
+						velit aliquet sagittis id consectetur purus. Vitae congue eu
+						consequat ac felis donec et. Et magnis dis parturient montes
+						nascetur ridiculus. Id leo in vitae turpis massa. Rhoncus est
+						pellentesque elit ullamcorper dignissim cras tincidunt lobortis
+						feugiat. Arcu risus quis varius quam quisque id diam. Enim facilisis
+						gravida neque convallis a cras semper auctor. Ultrices vitae auctor
+						eu augue. Sit amet consectetur adipiscing elit pellentesque
+						habitant. Rhoncus urna neque viverra justo nec.
+					</p>
+				</div>
+			</section>
+
+			<dialog class="m-dialog">
+				<video
+					controls
+					autoplay
+					muted
+					poster="../images/home/video_thumbnail.png"
+					class="m-dialog__video"
+					src="../videos/pet_toys.mp4"
+				></video>
+				<button class="m-dialog__closeButton">Close Video</button>
+			</dialog>
+
+			<footer>
+				<img
+					src="../images/home/Paw Paradise Logo.png"
+					alt="Placeholder image of an X"
+					srcset=""
+				/>
+				<a href="#">2024 Lorem ipsum</a>
+				<div>
+					<a href="#">Lorem ipsum</a>
+					<a href="#">Lorem ipsum</a>
+				</div>
+			</footer>
+		</section>
+
+		<script src="../js/home.js"></script>
+	</body>
+</html>
